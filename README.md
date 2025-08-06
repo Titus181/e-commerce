@@ -50,6 +50,7 @@
 
 ## 檔案結構
 
+```
 .
 ├── data.csv                     # 原始資料集
 ├── cleaned_ecommerce_data.csv   # 清理後的資料
@@ -60,3 +61,8 @@
 │   ├── monthly_sales_trend.png
 │   └── rfm_customer_segmentation.png
 └── README.md                    # 專案說明文件
+```
+
+---
+
+只要將上面這整段文字複製到您的 `README.md` 檔案中，檔案結構的部分就會以等寬字型正確地呈現樹狀圖了。
