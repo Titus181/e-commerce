@@ -1,68 +1,65 @@
 # E-commerce Sales Data Analysis
 
-## 專案簡介
+## Project Overview
 
-本專案旨在分析一份電子商務的交易資料，透過資料清理、探索性資料分析 (EDA) 以及顧客分群 (RFM)，挖掘出有價值的商業洞見。
+This project aims to analyze an e-commerce transaction dataset. Through data cleaning, Exploratory Data Analysis (EDA), and customer segmentation (RFM), we aim to uncover valuable business insights.
 
-## 資料來源
+## Data Source
 
-本專案使用的資料集為一份包含從 2010 年 12 月 1 日至 2011 年 12 月 9 日的真實線上零售交易資料。
+The dataset used in this project contains real online retail transactions from December 1st, 2010, to December 9th, 2011.
 
-* **原始資料**: `data.csv`
+* **Original Data**: `data.csv`
 
-## 分析流程
+## Analysis Workflow
 
-### 1. 資料清理
+### 1. Data Cleaning
 
-* 移除 `CustomerID` 缺失的資料。
-* 移除退貨 (`Quantity` < 0) 與免費商品 (`UnitPrice` = 0) 的訂單。
-* 轉換 `InvoiceDate` 為日期格式。
-* 新增 `TotalPrice` 欄位 (`Quantity` * `UnitPrice`)。
-* 清理後的資料儲存於 `cleaned_ecommerce_data.csv`。
+* Removed records with missing `CustomerID`.
+* Removed returned orders (`Quantity` < 0) and free items (`UnitPrice` = 0).
+* Converted `InvoiceDate` to a datetime format.
+* Added a `TotalPrice` column (`Quantity` * `UnitPrice`).
+* The cleaned data is saved as `cleaned_ecommerce_data.csv`.
 
-### 2. 探索性資料分析 (EDA)
+### 2. Exploratory Data Analysis (EDA)
 
-#### a. 各國訂單數量分析
+#### a. Order Analysis by Country
 
-分析不同國家的訂單分佈，了解主要的市場在哪裡。
+Analyzed the distribution of orders across different countries to identify key markets.
 
 ![Top 10 Countries by Number of Orders](picture/country_distribution.png)
 
-#### b. 熱銷商品分析
+#### b. Top Selling Products Analysis
 
-找出銷售數量最高的前十項商品。
+Identified the top ten best-selling products by quantity.
 
 ![Top 10 Selling Products](picture/top_10_products.png)
 
-#### c. 銷售趨勢分析
+#### c. Sales Trend Analysis
 
-分析每個月的總銷售額，觀察銷售的季節性趨勢。
+Analyzed the total sales for each month to observe seasonal trends.
 
 ![Monthly Sales Trend](picture/monthly_sales_trend.png)
 
-### 3. 顧客分群 (RFM Analysis)
+### 3. Customer Segmentation (RFM Analysis)
 
-使用 Recency (最近一次消費時間), Frequency (消費頻率), Monetary (消費金額) 將顧客分群，以了解顧客價值與行為。
+Segmented customers based on Recency, Frequency, and Monetary value to understand customer value and behavior.
 
-* **RFM 分析結果**: `rfm_analysis.csv`
+* **RFM Analysis Results**: `rfm_analysis.csv`
 
 ![Customer Segmentation based on RFM Analysis](picture/rfm_customer_segmentation.png)
 
-## 檔案結構
+## File Structure
 
 ```
 .
-├── data.csv                     # 原始資料集
-├── cleaned_ecommerce_data.csv   # 清理後的資料
-├── rfm_analysis.csv             # RFM 分析結果
-├── picture/                     # 存放所有分析圖表的資料夾
+├── data.csv                     # Original dataset
+├── cleaned_ecommerce_data.csv   # Cleaned data
+├── rfm_analysis.csv             # RFM analysis results
+├── picture/                     # Directory for all analysis plots
 │   ├── country_distribution.png
 │   ├── top_10_products.png
 │   ├── monthly_sales_trend.png
 │   └── rfm_customer_segmentation.png
-└── README.md                    # 專案說明文件
+└── README.md                    # Project documentation
+
 ```
-
----
-
-只要將上面這整段文字複製到您的 `README.md` 檔案中，檔案結構的部分就會以等寬字型正確地呈現樹狀圖了。
