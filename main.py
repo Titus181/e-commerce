@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 # Load the dataset
-df = pd.read_csv('data.csv', encoding='ISO-8859-1')
+df = pd.read_csv('data/data.csv', encoding='ISO-8859-1')
 
 # Display basic information about the dataset
 print("Dataframe Info:")
@@ -48,10 +48,10 @@ plt.xlabel('Country')
 plt.ylabel('Number of Orders')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig('country_distribution.png')
+plt.savefig('picture/country_distribution.png')
 
 # Save the cleaned data to a new CSV file
-df.to_csv('cleaned_ecommerce_data.csv', index=False)
+df.to_csv('data/cleaned_ecommerce_data.csv', index=False)
 
 print("Data cleaning and initial analysis are complete.")
 print("A plot of the top 10 countries by number of orders has been generated.")

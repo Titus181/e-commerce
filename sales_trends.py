@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the cleaned dataset
-df = pd.read_csv('cleaned_ecommerce_data.csv', parse_dates=['InvoiceDate'])
+df = pd.read_csv('data/cleaned_ecommerce_data.csv', parse_dates=['InvoiceDate'])
 
 # --- Analyze Sales Trends ---
 
@@ -20,7 +20,7 @@ plt.xlabel('Month')
 plt.ylabel('Total Sales')
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('monthly_sales_trend.png')
+plt.savefig('picture/monthly_sales_trend.png')
 
 print("Analysis of sales trends is complete.")
 print("A plot of the monthly sales trend has been generated.")

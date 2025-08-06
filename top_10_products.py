@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the cleaned dataset
-df = pd.read_csv('cleaned_ecommerce_data.csv')
+df = pd.read_csv('data/cleaned_ecommerce_data.csv')
 
 # --- Analyze Top Selling Products ---
 
@@ -19,7 +19,7 @@ plt.title('Top 10 Selling Products')
 plt.xlabel('Total Quantity Sold')
 plt.ylabel('Product')
 plt.tight_layout()
-plt.savefig('top_10_products.png')
+plt.savefig('picture/top_10_products.png')
 
 print("Analysis of top selling products is complete.")
 print("A plot of the top 10 selling products has been generated.")
