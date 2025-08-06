@@ -49,3 +49,14 @@
 ![Customer Segmentation based on RFM Analysis](picture/rfm_customer_segmentation.png)
 
 ## 檔案結構
+
+.
+├── data.csv                     # 原始資料集
+├── cleaned_ecommerce_data.csv   # 清理後的資料
+├── rfm_analysis.csv             # RFM 分析結果
+├── picture/                     # 存放所有分析圖表的資料夾
+│   ├── country_distribution.png
+│   ├── top_10_products.png
+│   ├── monthly_sales_trend.png
+│   └── rfm_customer_segmentation.png
+└── README.md                    # 專案說明文件
