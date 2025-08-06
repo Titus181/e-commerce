@@ -52,9 +52,10 @@ Segmented customers based on Recency, Frequency, and Monetary value to understan
 
 ```
 .
-├── data.csv                     # Original dataset
-├── cleaned_ecommerce_data.csv   # Cleaned data
-├── rfm_analysis.csv             # RFM analysis results
+├── data/                        # Directory for all data files
+|   ├── cleaned_ecommerce_data.csv   # Cleaned data
+|   ├── data.csv                     # Original dataset
+|   ├── rfm_analysis.csv             # RFM analysis results
 ├── picture/                     # Directory for all analysis plots
 │   ├── country_distribution.png
 │   ├── top_10_products.png
